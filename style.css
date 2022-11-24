@@ -1,0 +1,271 @@
+/* Utilities */
+:root {
+    /* colors */
+    --orange: #DA5E16;
+    --white: #fff;
+    --black: #000;
+    /* display */
+    --maxWidth: 1000px;
+}
+
+@font-face{
+    font-family: "Bebas";
+    src: url(./assets/fonts/BebasNeue/BebasNeue.otf); 
+    font-optical-sizing: auto;
+}
+@font-face{
+    font-family: "Nanum";
+    src: url(./assets/fonts/NanumGothic/NanumGothic-Regular.ttf); 
+    font-optical-sizing: auto;
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-width: 720px;
+    background-color: var(--white);
+}
+
+body {
+    background-color: black;
+}
+
+.separator {
+    width: 100%;
+    height: 3px;
+    margin: 20px auto;
+    background-color: var(--orange);
+}
+
+.text-container{
+    margin: 80px 0;
+}
+
+.text-container .text{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nanum';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.text p{
+    font-size: 20px;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+.text-container h2{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nanum';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 2rem;
+    color: #FFFFFF;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+/*HEADER*/
+
+.header {
+    background-color: var(--orange);
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    min-height: 200px;
+}
+.inner {
+    max-width: var(--maxWidth);
+    display: flex;
+    justify-content: center;
+}
+
+.inner .logo {
+    width: 30%;
+}
+
+.inner .title {
+    margin: 35px 20px;
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(20px, 3vw, 28px);
+    line-height: 80px;
+    text-align: right;
+    color: var(--white);
+}
+
+/* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    max-width: var(--maxWidth);
+}
+
+.section-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* SECTION */
+
+.sectionTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Bebas';
+    text-align: right;
+}
+.sectionTitleFigure{
+    width: clamp(300px, 50%, 500px);
+    padding: 5px;
+    background-color: var(--white);
+    clip-path: polygon(0% 50%, 20px 0, 100% 0, 100% 100%, 20px 100%);
+}
+.sectionTitle__A,
+.sectionTitle__B{
+    padding-right: 10px;
+}
+.sectionTitle__A{
+    color: var(--black);
+}
+.sectionTitle__B{
+    color: var(--orange);
+}
+
+
+/*SECTION LIXIVACION*/
+
+
+/* DOWNLOAD */
+
+.docs .docs-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.docs-container ul li{
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.docs-container ul li a{
+    color: #FFFFFF;
+}
+
+
+/* CONTACT / FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.logo__footer{
+    display: block;
+    width: 250px;
+    height: auto;
+}
+.contact{
+    width: 700px;
+    margin-bottom: 50px;
+}
+.contact__link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+    height: 70px;
+    margin: 20px auto;
+    text-decoration: none;
+}
+.contact__link:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.contact__logo{
+    display: block;
+    height: 50px;
+    width: auto;
+}
+.contact__name{
+    width: 70%;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    font-family: 'Nanum';
+}
+
+.sedes{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.sedes .sede {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sede h3{
+    color: #FFFFFF;
+    font-family: 'Nanum';
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sede p{
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nanum';
+    font-style: normal;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+    color: #FFFFFF;
+}
